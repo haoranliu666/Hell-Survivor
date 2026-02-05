@@ -1,32 +1,35 @@
 # Hell-Survivor
-A top-down survival action game where a hero fights demons in hell!
+A top-down survival action game where a hero fights demons in hell.
 
 ## Play Online
 🎮 **[Play the game in your browser!](https://haoranliu666.github.io/Hell-Survivor/)**
 
-*(Note: The game will be available after the first successful GitHub Actions workflow run)*
+This project is a **web-native HTML5 Canvas game** deployed directly to GitHub Pages.
 
 ## About
-A vibe-coded game featuring:
-- SNES/GBA-style pixel art graphics with CRT filter
-- Resizable window with fullscreen support
-- Authentic retro game feel with dark hell theme
+Features in the web port:
+- Retro-inspired pixel visuals and hell-themed arena combat
+- Weapon system (Sword / Bow / Bomb) with a start-of-run weapon choice and wave-completion upgrades
+- Dodge roll + invulnerability frames
+- Wave and boss progression with increasing pressure
+- EXP, leveling, score tracking, and top-10 highscores (stored in browser localStorage)
 
 ## Controls
-- **WASD or Arrow Keys**: Move
-- **SPACE**: Attack (requires sword)
-- **R**: Restart (on game over)
-- **F11**: Toggle fullscreen
+- **WASD / Arrow Keys**: Move
+- **Space**: Use equipped weapon (Sword slash / Bow shot / Bomb throw)
+- **Shift**: Dodge roll
+- **R**: Restart
+- **P**: Pause
 
 ## Run Locally
-**Requirements:**
-- Python 3.11 or higher
+Because this is a static web app, you can run it with any local web server.
 
-**Installation:**
 ```bash
-pip install -r requirements.txt
-python main.py
+python -m http.server 8000
 ```
 
-## Building for Web
-This game is automatically built and deployed to GitHub Pages using Pygbag. The workflow runs on every push to the main branch.
+Then open: `http://localhost:8000`
+
+## GitHub Pages Deployment
+Deployment is automated with GitHub Actions using `.github/workflows/deploy-pages.yml`.
+On pushes to `main`, the static site is deployed to GitHub Pages.
