@@ -19,7 +19,7 @@ A vibe-coded game featuring:
 ## Run Locally
 ```bash
 pip install -r requirements.txt
-python hell_survivor.py
+python main.py
 ```
 
 ## Building for Web
