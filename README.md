@@ -4,17 +4,20 @@ A top-down survival action game where a hero fights demons in hell.
 ## Play Online
 🎮 **[Play the game in your browser!](https://haoranliu666.github.io/Hell-Survivor/)**
 
-This project is now a **web-native HTML5 Canvas game** deployed directly to GitHub Pages.
+This project is a **web-native HTML5 Canvas game** deployed directly to GitHub Pages.
 
 ## About
 Features in the web port:
-- Retro-inspired pixel-style visuals
-- Browser-native controls and rendering (no Python runtime required)
-- Survival loop with enemy waves, healing pickups, and a boss fight
+- Retro-inspired pixel visuals and hell-themed arena combat
+- Weapon system (Sword / Bow / Bomb) with a start-of-run weapon choice and wave-completion upgrades
+- Dodge roll + invulnerability frames
+- Wave and boss progression with increasing pressure
+- EXP, leveling, score tracking, and top-10 highscores (stored in browser localStorage)
 
 ## Controls
 - **WASD / Arrow Keys**: Move
-- **Space**: Attack
+- **Space**: Use equipped weapon (Sword slash / Bow shot / Bomb throw)
+- **Shift**: Dodge roll
 - **R**: Restart
 - **P**: Pause
 
